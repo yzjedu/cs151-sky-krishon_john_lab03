@@ -14,20 +14,17 @@ Ski Jump Calculator
 
 # DATA IN
 
-# Asks for input of hill type. The chosen hill type then changes the values of the height, PPM, and par. Asks for reinput if it is not either.
-while True:
-    hill_type = input("Enter hill type (normal or large): ")
-    if hill_type == "normal":
+# Asks for input of hill type. The chosen hill type then changes the values of the height, PPM, and par.
+hill_type = input("Enter hill type (normal or large): ")
+if hill_type == "normal":
         hill_height = 46
         hill_ppm = 2
         hill_par = 90
-        break
-    elif hill_type == "large":
+elif hill_type == "large":
         hill_height = 70
         hill_ppm = 1.8
         hill_par = 120
-        break
-    else:
+else:
         print("Invalid hill type. Please input again.")
 
 # Asks for input of the speed of jumper.
